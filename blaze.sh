@@ -27,14 +27,14 @@ mkdir -p outdir
 export ARCH=arm64
 export ARCH_MTK_PLATFORM=mt6735
 export CROSS_COMPILE=$PWD/tools/toolchain/bin/aarch64-linux-android-
-export KBUILD_BUILD_USER="Nasreirma™"
-export KBUILD_BUILD_HOST="Deepin-OS"
+export KBUILD_BUILD_USER="DennisMurimi™"
+export KBUILD_BUILD_HOST="AndroidHQ254Projects"
 
 
 compile_kernel ()
 {
 echo -e "$blue***********************************************"
-echo "          Compiling Blaze™ Kernel...          "
+echo "          Compiling Kernel...          "
 echo -e "***********************************************$nocol"
 echo ""
 #hot4pro defconfig
@@ -54,7 +54,7 @@ fi
 zip_zak ()
 {
 echo -e "$cyan***********************************************"
-echo "          ZIpping Blaze™ Kernel...          "
+echo "          ZIpping Kernel...          "
 echo -e "***********************************************$nocol"
 echo ""
 echo -e "$yellow Putting custom_kernel™ Kernel in Recovery Flashable Zip $nocol"
@@ -80,7 +80,7 @@ cd custom_kernel
     echo "" "outdir/custom_kernel/out_done"
     echo ""
     echo -e "$blue***********************************************"
-    echo "          Uploading Blaze™ Kernel as zip...          "
+    echo "          Uploading Kernel as zip...          "
     echo -e "***********************************************$nocol"
     echo ""
     curl --upload-file outdir/custom_kernel/out_done/Hot4pro.Oreo*.zip https://transfer.sh/Hot4pro.Oreo_8.x_$BUILD_START.zip
